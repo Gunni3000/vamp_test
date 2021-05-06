@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "test": "yarn run cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^7.1.0"
+  }
+}
