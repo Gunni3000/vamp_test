@@ -25,6 +25,7 @@ context('Vamp Automated Test Challenge', () => {
 
   it('Test case 2 - User is not able to save an "Influencer" campaign quote until all required fields are populated', () => {
       
+    campaignQuotePage.selectCampaignType('Influencer');
     campaignQuotePage.saveQuote();
     campaignQuotePage.assertRequiredFields();
     campaignQuotePage.setBudgetCurrencyToAUD();
