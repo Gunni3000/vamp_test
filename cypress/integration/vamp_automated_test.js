@@ -43,7 +43,7 @@ context('Vamp Automated Test Challenge', () => {
   it('Test case 3 - Validate fields that are not visible when the "Content" campaign type is selected', () => {
     // This test validates that creator manangement, event attendance and ojbectives/socials channels do not appear for a Content campaign 
     campaignQuotePage.selectCampaignType('Content');
-    campaignQuotePage.assertCreatorManagementNotVisible();
+    campaignQuotePage.assertCreatorManagementNotVisible(); // Note: This assertion currently fails - refer to Task Notes section in accompanying documentation
     campaignQuotePage.assertEventAttendanceNotVisible();
     campaignQuotePage.assertObjectivesAreNotVisible();
     campaignQuotePage.assertSocialChannelFieldsNotVisible();
