@@ -11,7 +11,7 @@ context('Vamp Automated Test Challenge', () => {
       .should('be.visible');
   })
 
-  it('Test case 1 - Setting currency, budget, location & social channels will show performance metric results for an Influencer campaign type', () => {
+  it('Test case 1 - Setting currency, budget, location & social channel will show performance metric results for an "Influencer" campaign type', () => {
 
     campaignQuotePage.selectCampaignType('Influencer');
     campaignQuotePage.setBudgetCurrencyToAUD();
@@ -23,7 +23,7 @@ context('Vamp Automated Test Challenge', () => {
     campaignQuotePage.assertSocialChannelValuesAppear();
   })
 
-  it('Test case 2 - User is not able to save an Influencer campaign quote until all required fields are entered', () => {
+  it('Test case 2 - User is not able to save an "Influencer" campaign quote until all required fields are populated', () => {
       
     campaignQuotePage.saveQuote();
     campaignQuotePage.assertRequiredFields();
@@ -38,7 +38,7 @@ context('Vamp Automated Test Challenge', () => {
     campaignQuotePage.assertSaveQuotePromptAppears();
   })
 
-  it('Test case 3 - Validate fields that are not visible when the Content campaign type is selected', () => {
+  it('Test case 3 - Validate fields that are not visible when the "Content" campaign type is selected', () => {
 
     campaignQuotePage.selectCampaignType('Content');
     //campaignQuotePage.assertCreatorManagementNotVisible();
@@ -47,7 +47,7 @@ context('Vamp Automated Test Challenge', () => {
     campaignQuotePage.assertSocialChannelFieldsNotVisible();
   })
 
-  it('Test case 4 - Validate social channels bars are not visible and performance metrics show images and videos for a Content campaign type', () => {
+  it('Test case 4 - Validate social channel bars are not visible and performance metrics show images and videos for a "Content" campaign type', () => {
 
     campaignQuotePage.selectCampaignType('Content');
     campaignQuotePage.assertSocialChannelBarsNotVisibleUnderContent();
