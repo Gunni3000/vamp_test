@@ -87,7 +87,6 @@ class campaignQuotePage {
         cy.get('.dzSwvm > .gdbLrW > [data-cy=input-error]').should('have.text', 'This value is required');
         cy.get('.jQrgUF > .gdbLrW > [data-cy=input-error]').should('have.text', 'This value is required');
         cy.get('.fWVOjf > :nth-child(3) > :nth-child(1) > [data-cy=input-error]').should('have.text', 'This value is required');
-
     }
 
     assertSaveQuotePromptAppears() {
