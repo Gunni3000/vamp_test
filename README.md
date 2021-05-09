@@ -8,7 +8,7 @@ To run, execute the following in a terminal window: **yarn test**
 
 Select test to run from the test runner once loaded: **vamp_automated_test.js**
 
-
+Refer to accompanying document containg written test cases and task notes: **VampQARecruitmentChallengeDoc.AygunYildiz.docx**
 
 
 
